@@ -4,7 +4,7 @@ plugins {
     id 'signing'
 }
 
-def versionName = "1.0.3"
+def versionName = "1.0.4"
 
 android {
     namespace = "com.gemalto.jp2"
