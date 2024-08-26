@@ -123,5 +123,5 @@ byte[] j2kdata = new JP2Encoder(bmp)
 ## Prepare build
 Sync OpenJPEG submodule.
 ```
-git submodule sync
+git submodule update
 ```
