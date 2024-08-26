@@ -1,6 +1,6 @@
 # JP2 for Android
 ---------------------------
-An open-source JPEG-2000 image encoder/decoder for Android based on [OpenJPEG](http://www.openjpeg.org/) v2.4.0.
+An open-source JPEG-2000 image encoder/decoder for Android based on [OpenJPEG](http://www.openjpeg.org/) v2.5.2.
 
 ## Set up
 Add dependency to your `build.gradle`:
@@ -118,4 +118,10 @@ JP2 is the default output format, but it can be changed:
 byte[] j2kdata = new JP2Encoder(bmp)
                      .setOutputFormat(FORMAT_J2K)
                      .encode();
+```
+
+## Prepare build
+Sync OpenJPEG submodule.
+```
+git submodule sync
 ```

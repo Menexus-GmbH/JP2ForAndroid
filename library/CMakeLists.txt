@@ -38,6 +38,7 @@ add_library(${CMAKE_PROJECT_NAME} SHARED
              src/main/cpp/openjpeg/src/lib/openjp2/pi.c
              src/main/cpp/openjpeg/src/lib/openjp2/ppix_manager.c
              src/main/cpp/openjpeg/src/lib/openjp2/sparse_array.c
+             src/main/cpp/openjpeg/src/lib/openjp2/ht_dec.c
              src/main/cpp/openjpeg/src/lib/openjp2/t1.c
              src/main/cpp/openjpeg/src/lib/openjp2/t2.c
              src/main/cpp/openjpeg/src/lib/openjp2/tcd.c
@@ -75,6 +76,6 @@ find_library( # Sets the name of the path variable.
 
 target_link_libraries(${CMAKE_PROJECT_NAME}
 
-        # Links the target library to the log library
+                       # Links the target library to the log library
                        # included in the NDK.
                        ${log-lib} )
